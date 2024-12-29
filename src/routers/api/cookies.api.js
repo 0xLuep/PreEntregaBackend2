@@ -1,3 +1,5 @@
+// ESTE ARCHIVO NO ESTÁ EN USO
+
 import { Router } from "express";
 
 const cookiesRouter = Router()

@@ -14,8 +14,8 @@ selector.addEventListener("click", async (event)=>{
         };
         let response = await fetch("/api/sessions/login", options) 
         response = await response.json()
-        if (response.token) {
-            localStorage.setItem("token", response.token)
+        if (response.message === "USER LOGGED IN") {
+            //localStorage.setItem("token", response.token)
             location.replace("/")
         } else {
             alert("INVALID CREDENTIALS")
